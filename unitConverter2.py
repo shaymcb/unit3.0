@@ -7,7 +7,7 @@ while 1==1:
     print('2) kilograms to pounds')
     print('3) liters to gallons')
     print('4) Celsius to Fahrenheit')
-    print('5) Quit Converter')
+    print('5) Quit')
     print(' ')
     choice = int(input('Choose a number: '))
 
@@ -26,5 +26,5 @@ while 1==1:
     elif choice == 5:
         break
     else:
-        print('you done fucked up-- try again.')
+        print('N/A, try again.')
 
