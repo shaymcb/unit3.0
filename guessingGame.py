@@ -7,7 +7,7 @@ from random import randint
 num = randint(1,100)
 
 while 1==1:
-    guess = int(input('Guess a number between 1 and 100: ')
+    guess = int(input('Guess a number between 1 and 100: '))
     if guess == num:
         print('You win!')
         break
