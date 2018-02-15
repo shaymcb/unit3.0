@@ -12,5 +12,6 @@ i = 0
 
 while dates <=10
     i += 1
-    weekday(year,month,13)
-    
+    weekday = weekday(year,month,13)
+    if weekday = 5:
+        print(month+'/13/'+year)
