@@ -11,14 +11,12 @@ division = 1
 places = 0
 while division < base10:
     division = division * base
-    places += 1
 division = division / base
-places -= 1
 
 num = ""
 while base10 > 1:
     place = base10//division
-    base10 -= place*division
+    base10 = base - place*division
     if place <= 9:
         place = str(place)
     else:
