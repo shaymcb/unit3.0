@@ -4,6 +4,8 @@
 
 text = 'Hello.'
 while 1 == 1:
-    text = input(text," -")
-    if text = = 'anything':
+    text = input("")
+    if text == "I'm stupid":
+        print("Yes you are.")
         break
+    print(text)
