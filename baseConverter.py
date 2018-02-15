@@ -25,5 +25,6 @@ while base10 > 1:
         s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         place = s[place-9]
     num = num+place
+    division = division / base
 
 print(num)
