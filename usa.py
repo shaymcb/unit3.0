@@ -7,7 +7,7 @@ from ggame import *
 red = Color(0xFF0000,1)
 white = Color(0xFFFFFF,1)
 blue = Color(0x0000FF,1)
-y=400 #y is flag height, used as scaling factor in like everything so I made it one letter
+y=int(input('Enter flag height: ')) #y is flag height, used as scaling factor in like everything so I made it one letter
 x = y/80 #scale factor for stars
 distx = (0.063*y-4.9*x/2)/y
 disty = (0.054*y-5*x/2)/y
