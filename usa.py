@@ -20,7 +20,9 @@ outline = LineStyle(0,white)
 
 star = PolygonAsset([(x*.073,x*2.417),(x*1.927,x*2.417),(x*2.5,x*0.383),(x*3.073,x*2.417),(x*4.927,x*2.417),(x*3.427,x*3.237),(x*4,x*5),(x*2.5,x*3.91),(x*1,x*5),(x*1.573,x*3.237)],outline,white)
 blueRectangle = RectangleAsset(blueWidth,blueHeight,outline,blue)
+redRectangle = RectangleAsset(stripeWidth,y,outline,red)
 
+Sprite(redRectangle)
 Sprite(blueRectangle)
 for i in range(1,6*5+1):
     Sprite(star,(distx*y,disty*y))
