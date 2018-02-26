@@ -7,12 +7,14 @@ from ggame import *
 red = Color(0xFF0000,1)
 white = Color(0xFFFFFF,1)
 blue = Color(0x0000FF,1)
-x = 5
-y=400
+y=400 #y is flag height, used as scaling factor in like everything so I made it one letter
+x = y/80 #scale factor for stars
 distx = 0.032
 disty = 0.02
 blueWidth = 0.76 * y
 blueHeight = 7/13 * y
+stripeWidth = 1.9 * y
+stripeHeight = y / 13
 
 outline = LineStyle(0,white)
 
