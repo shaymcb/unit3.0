@@ -8,9 +8,9 @@ red = Color(0xFF0000,1)
 white = Color(0xFFFFFF,1)
 blue = Color(0x0000FF,1)
 y=int(input('Enter flag height: ')) #y is flag height, used as scaling factor in like everything so I made it one letter
-x = y/80 #scale factor for stars
-distx = (0.063*y-4.9*x/2)/y
-disty = (0.054*y-5*x/2)/y
+x = y/80 #scale factor for stars, probably shouldn't have called it x but whatever
+distx = (0.063*y-4.9*x/2)/y #x distance between stars, initial position is measured from center but python measures from top left so had to adjust that
+disty = (0.054*y-5*x/2)/y #y distance between stars
 blueWidth = 0.76 * y
 blueHeight = 7/13 * y
 stripeWidth = 1.9 * y
@@ -21,8 +21,14 @@ outline = LineStyle(0,white)
 star = PolygonAsset([(x*.073,x*2.417),(x*1.927,x*2.417),(x*2.5,x*0.383),(x*3.073,x*2.417),(x*4.927,x*2.417),(x*3.427,x*3.237),(x*4,x*5),(x*2.5,x*3.91),(x*1,x*5),(x*1.573,x*3.237)],outline,white)
 blueRectangle = RectangleAsset(blueWidth,blueHeight,outline,blue)
 redRectangle = RectangleAsset(stripeWidth,y,outline,red)
+whiteStripe = RectangleAsset(stripeWidth,stripeHeight,white)
 
+#stripes
 Sprite(redRectangle)
+for i in range(1,7):
+    
+
+#stars
 Sprite(blueRectangle)
 for i in range(1,6*5+1):
     Sprite(star,(distx*y,disty*y))
