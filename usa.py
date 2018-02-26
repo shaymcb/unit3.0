@@ -9,8 +9,8 @@ white = Color(0xFFFFFF,1)
 blue = Color(0x0000FF,1)
 y=400 #y is flag height, used as scaling factor in like everything so I made it one letter
 x = y/80 #scale factor for stars
-distx = 0.032
-disty = 0.02
+distx = (0.063*y-4.9*x/2)/y
+disty = (0.054*y-5*x/2)/y
 blueWidth = 0.76 * y
 blueHeight = 7/13 * y
 stripeWidth = 1.9 * y
@@ -18,7 +18,7 @@ stripeHeight = y / 13
 
 outline = LineStyle(0,white)
 
-star = PolygonAsset([(x*.073,x*2.417),(x*1.927,x*2.417),(x*2.5,x*0.383),(x*3.073,x*2.427),(x*4.927,x*2.417),(x*3.427,x*3.237),(x*4,x*5),(x*2.5,x*3.91),(x*1,x*5),(x*1.573,x*3.237)],outline,white)
+star = PolygonAsset([(x*.073,x*2.417),(x*1.927,x*2.417),(x*2.5,x*0.383),(x*3.073,x*2.417),(x*4.927,x*2.417),(x*3.427,x*3.237),(x*4,x*5),(x*2.5,x*3.91),(x*1,x*5),(x*1.573,x*3.237)],outline,white)
 blueRectangle = RectangleAsset(blueWidth,blueHeight,outline,blue)
 
 Sprite(blueRectangle)
