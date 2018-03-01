@@ -34,13 +34,13 @@ for i in range(0,6):
 
 #stars
 Sprite(blueRectangle)
-for i in range(1,6*5+1):
-    Sprite(star,(distx*h,disty*h))
-    if i%6 != 0 and i<=6*4:
-        Sprite(star,(.063*h+distx*h,.054*h+disty*h))
-    distx +=.126
-    if i%6 == 0:
-        disty += .108
-        distx = 0.032
+for j in range(5):
+    for i in range(6):
+        Sprite(star,(distx*h,disty*h))
+        if i != 5 and j != 4:
+            Sprite(star,(.063*h+distx*h,.054*h+disty*h))
+        distx +=.126
+    disty += .108
+    distx = 0.032
 
 App().run()
