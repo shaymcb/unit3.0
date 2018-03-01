@@ -5,7 +5,7 @@
 text = input('Enter text: ')
 
 for ch in text:
-    if ch in 'abcde':
+    if ch in 'aeiouAEIOU':
         print(ch.upper())
     
     else:
