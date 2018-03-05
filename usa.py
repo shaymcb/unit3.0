@@ -1,6 +1,6 @@
 #Shaylee McBride
 #15Feb2018
-#usa.py
+#usa.py - makes a usa flag
 
 from ggame import *
 
@@ -12,7 +12,7 @@ black = Color(0x000000,1)
 outline = LineStyle(0,white)
 
 #dimensions
-h=int(input('Enter flag height: ')) #h is flag height, used as scaling factor in like everything so I made it one letter
+h=int(input('Enter flag height (ex. 500): ')) #h is flag height, used as scaling factor in like everything so I made it one letter
 x = h/80 #scale factor for stars, probably shouldn't have called it x but whatever
 distx = (0.063*h-4.9*x/2)/h #x distance between stars, initial position is measured from center but python measures from top left so had to adjust that
 disty = (0.054*h-5*x/2)/h #y distance between stars, same deal with initial position
