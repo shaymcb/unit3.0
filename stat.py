@@ -14,6 +14,7 @@ while True:
 L.sort
 minimum = min(L)
 maximum = max(L)
+mean = sum(L)/len(L)
 
 middle = len(L)//2
 if middle == len(L)/2:
@@ -26,3 +27,6 @@ for item in L:
     count = L.count(item)
     if count > most:
         most = count
+        mode = item
+
+print(minimum, maximum, mean, median, mode)
